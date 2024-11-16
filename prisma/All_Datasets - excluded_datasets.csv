@@ -1,0 +1,78 @@
+Accession,title,platform,experimentType,condition
+GSE17025,Gene Expression Analysis of Stage I Endometrial Cancers,Affymetrix Human Genome U133 Plus 2.0 Array,Expression profiling by array,diseased
+GSE7305,Human endometriosis vs normal endometrium study - transcriptional profiling, Affymetrix Human Genome U133 Plus 2.0 Array,Expression profiling by array,diseased
+GSE3013,"	Actions of tamoxifen in the uterus and its molecular effectors in endometrial carcinogenesis.",Affymetrix Human Genome U95A Array,Expression profiling by array,diseased
+GSE168902,Estrogen receptor beta promotes endometriosis progression by up-regulating CD47 expression in ectopic endometrial stromal cells,Illumina NovaSeq 6000 (Homo sapiens),Expression profiling by high throughput sequencing,diseased
+GSE188915,Comparison of organoids from Menstrual Fluid and Hormone-treated Endometrium: Novel tools for Gynaecological Research,NextSeq 550 ,Expression profiling by high throughput sequencing,diseased
+GSE173682,A multi-omic single-cell atlas of human gynecological malignancies,Illumina NextSeq 500,xpression profiling by high throughput sequencing,diseased
+GSE182132,Integrated Transcriptome and Multiple Activated Pathways in Endometrial Cancer,Illumina HiSeq 2500,Expression profiling by high throughput sequencing,diseased
+GSE197928,"	A multi-level investigation of the genetic relationship between endometriosis and ovarian cancer histotypes",Illumina NextSeq 500,Genome binding/occupancy profiling by high throughput sequencing,diseased
+GSE196748,Transcriptome-wide m6A methylome of endometrioid ovarian cancer and ovarian endometriosis,Illumina NovaSeq 6000 ,"Expression profiling by high throughput sequencing/
+Methylation profiling by high throughput sequencing",diseased
+GSE167946,Histone H3K4me3 signal breadth reveals constitutive and hypoxia stress responsive endometrial functions linked to endometriosis,Illumina Genome Analyzer II ,Genome binding/occupancy profiling by high throughput sequencing,diseased
+GSE174305,RNA sequencing of human endometrial epithelial and stromal cell lines treated with AG-205,Illumina HiSeq 4000,Expression profiling by high throughput sequencing,diseased
+GSE185273,Human tRF&tiRNA Sequencing for exosomes derived from ectopic endometrial tissues in EMs patients,Illumina NextSeq 500,Non-coding RNA profiling by high throughput sequencing,diseased
+GSE174741,LINC01133 inhibits invasion and promotes proliferation in an endometriosis epithelial cell line,Ion Torrent Proton,xpression profiling by high throughput sequencing,diseased
+GSE153740,Transcriptional profiling of the mid-secretory phase eutopic endometrial samples from women with endometriosis,Illumina NextSeq 500 ,xpression profiling by high throughput sequencing,diseased
+GSE153739,Transcriptional profiling of the mid-proliferative phase eutopic endometrial samples from women with endometriosis,Illumina NextSeq 500,expression profiling by high throughput sequencing,diseased
+GSE153813,Stage-specific miRNA expression profiling during menstrual cycle in endometriosis and non-endometriosis patients,Illumina NextSeq 500 ,Non-coding RNA profiling by high throughput sequencing,diseased
+GSE171507,PCOS decidualised endometrial stromal cells present with altered effects of androgens,Illumina NextSeq 500 (,xpression profiling by high throughput sequencing,Diseased
+GSE165321,Genome-wide analysis of human endometria,Illumina HiSeq 2500,enome-wide analysis of human endometria,Diseased
+GSE164768,Poor Endometrial Proliferation after Clomiphene is Associated with Altered Estrogen Action [RNA-Seq],Illumina NovaSeq 6000,Expression profiling by high throughput sequencing,different phase
+GSE164764,Poor Endometrial Proliferation after Clomiphene is Associated with Altered Estrogen Action [ChIP-Seq],Illumina NextSeq 500,Genome binding/occupancy profiling by high throughput sequencing,different phase
+GSE165014,RNA-seq of human endometrial stromal cell lines followng LINC00339 overexpression,Illumina NovaSeq 6000 ,xpression profiling by high throughput sequencing,different cell type
+GSE135122,Modulation of Syndecan-1/4 reduces the invasive potential of endometrioma through TGF-β signalling,NextSeq 550 ,Expression profiling by high throughput sequencing,different cell type
+GSE152660,SWI/SNF inactivation in the endometrial epithelium leads to loss of epithelial integrity [ChIP-seq],Illumina NovaSeq 6000 ,Genome binding/occupancy profiling by high throughput sequencing,different assay
+GSE136412,Observation of the Changes in Chemokine-related Gene Expression of Endometriotic Cyst Stromal Cells by Three-dimensional Collagen Gel Culture,Agilent-039494 SurePrint G3 Human GE v2 8x60K Microarray 039381 (Probe Name version),Expression profiling by array,diseased
+GSE141549,"Transcriptome analysis of differential gene expression of endometrium, peritoneum, and endometriosis lesions",Illumina HumanHT-12 V4.0 expression beadchip/Illumina HumanWG-6 v2.0 expression beadchip,Expression profiling by array,diseased
+GSE106661,Inactivation of ARID1A-SWI/SNF Complex Alters Chromatin Compactness at Enhancer Regions and Affects Transcription of Key Tumor Signaling Circuitry [RNA-Seq],Illumina HiSeq 2500,Expression profiling by high throughput sequencing,diseased
+GSE135640,Seminal plasma promotes decidualization of endometrial stromal fibroblasts from women with and without inflammatory disorders in a manner dependent on IL11 signaling,Illumina HiSeq 2000,Expression profiling by high throughput sequencing,diseased
+GSE130028,Steroid Hormones Regulate Genome-Wide Epigenetic Programming and Gene Transcription in Human Endometrial Cells with Marked Aberrancies in Endometriosis [methylation],Illumina HumanMethylation450 BeadChip,Methylation profiling by genome tiling array,different assay
+GSE145702,Steroid Hormones Regulate Genome-Wide Epigenetic Programming and Gene Transcription in Human Endometrial Cells with Marked Aberrancies in Endometriosis,"[HuGene-1_0-st] Affymetrix Human Gene 1.0 ST Array [transcript (gene) version]
+GPL13534	Illumina HumanMethylation450 BeadChip (HumanMethylation450_15017482)","	Methylation profiling by genome tiling array
+Expression profiling by array",different assay
+GSE130435,Macrophages in eutopic endometrium endometriosis,Illumina HiSeq 4000 ,Macrophages in eutopic endometrium endometriosis,diseased
+GSE135485,Gene expression signature of endometrial samples from women with and without endometriosis.,Illumina HiSeq 3000 ,Expression profiling by high throughput sequencing,diseased
+GSE86534,Genome-wide long non-coding RNAs and mRNAs analysis of the tissues related to ovarian endometriosis,Agilent-067406 Human CBC lncRNA + mRNA microarray V4.0 (Probe name version),Expression profiling by array,diseased
+GSE134056,Machine Learning Classifiers for Endometriosis Using Transcriptomics and Methylomics Data [Transcriptomics],Illumina NextSeq 500,Expression profiling by high throughput sequencing,diseased
+GSE118928,"Transcriptional profiling of healthy, eutopic and ectopic endometrial organoids",Illumina NextSeq 500 ,Expression profiling by high throughput sequencing,diseased
+GSE113818,Genome-wide maps of histone modifications in endometrial cancer cell lines,Illumina HiSeq 2500,Genome binding/occupancy profiling by high throughput sequencing,diseased
+GSE120103,Homo sapiens whole genome expression microarray of endometrium obtained from fertile and Infertile women with stage IV ovarian endometriosis and without endometriosis,Agilent-014850 Whole Human Genome Microarray 4x44K G4112F (Probe Name version),Expression profiling by array,diseased
+GSE124010,miR-205-5p Inhibits Human Endometriosis Progression by Targeting ANGTP2 in Endometrial Stromal Cells,Agilent-070156 Human_miRNA_V21.0_Microarray 046064 (miRNA ID version),Non-coding RNA profiling by array,diseased
+GSE99949,Next-generation sequencing of matched ectopic and eutopic endometrium identifies novel endometriosis-related genes and highlights the role of general metabolism,Ion Torrent PGM,Expression profiling by high throughput sequencing,diseased
+GSE105765,microRNA expression profilings in ectopic and eutopic endometria of ovarian endometriosis,Illumina HiSeq 2000,Non-coding RNA profiling by high throughput sequencing,diseased
+GSE105764,lncRNA expression profilings in ectopic and eutopic endometria of ovarian endometriosis.,Illumina HiSeq 4000 ,Non-coding RNA profiling by high throughput sequencing,diseased
+GSE97373,Genome-wide nucleosome occupancy and DNA methylation profiling in endometriosis cells,Illumina HiSeq 2000 ,Genome binding/occupancy profiling by high throughput sequencing/Methylation profiling by high throughput sequencing,different assay
+GSE86810,Genome-wide histone modification profiling in endometriosis cells,Illumina HiSeq 2000,Genome binding/occupancy profiling by high throughput sequencing,diseased
+GSE86572,Gene-expression analysis of iEEC16 endometriosis cells with ARID1A KD,Illumina HumanHT-12 V4.0 expression beadchip,Expression profiling by array,diseased
+GSE176257,Gene expression analysis of murine endometrial cancer cell lines and murine normal endometrium,Illumina NovaSeq 6000,Expression profiling by high throughput sequencin,different organism
+GSE186070,Systematic reconstruction of the cellular trajectories of mammalian embryogenesis,Illumina NovaSeq 6000 ,Expression profiling by high throughput sequencing,different cell type
+GSE186069,Systematic reconstruction of the cellular trajectories of mammalian embryogenesis (E8.5),Illumina NovaSeq 6000,Expression profiling by high throughput sequencing,different cell type
+GSE182932,Progesterone differentially affects the transcriptomic profiles of cow endometrial cell types,Illumina HiSeq 4000 ,Expression profiling by high throughput sequencing,different organism
+GSE183149,The endometrial response to pregnancy is altered in cows after uterine infection,Illumina NovaSeq 6000 ,Expression profiling by high throughput sequencing,different organism
+GSE171577,Endometrial luminal epithelium transcriptome during early diestrus defines pregnancy outcome in cattle,Illumina NovaSeq 6000,Expression profiling by high throughput sequencing,different organism
+GSE169638,Impact of negative energy balance on transcriptomic profiles of three endometrial cell types isolated by laser capture microdissection in postpartum dairy cows,Illumina HiSeq 4000 ,Expression profiling by high throughput sequencing,different organism
+GSE167086,Endometrium on-a-chip reveals insulin- and glucose-induced alterations in the transcriptome,Illumina NextSeq 500,Expression profiling by high throughput sequencing,different organism
+GSE173289,Dysregulated microRNAs in uterine fluid from women with recurrent implantation failure are linked to endometrial receptivity and implantation,Illumina NovaSeq 6000 ,Non-coding RNA profiling by high throughput sequencing,different cell type
+GSE188915,Comparison of organoids from Menstrual Fluid and Hormone-treated Endometrium: Novel tools for Gynaecological Research,NextSeq 550 ,Expression profiling by high throughput sequencing,different cell type
+GSE169390,Single-cell RNA-Seq of premature Rhesus macaques lungs with intra-uterine inflammation and therapuetic blockade,Illumina NovaSeq 6000,Expression profiling by high throughput sequencing,different organism
+GSE163773,Transcriptomic phenotyping of human labor myometrium.,Illumina HiSeq 2500 (,Expression profiling by high throughput sequencing,different cell type
+GSE158958,Global transcriptomic changes occur in uterine fluid-derived extracellular vesicles (UF-EVs) during the endometrial window for embryo implantation,Illumina NextSeq 500 ,Expression profiling by high throughput sequencing,different cell type
+GSE124361,Retrieval of germinal zone neural stem cells from the cerebrospinal fluid of premature infants with intraventricular hemorrhage," Affymetrix Clariom S Assay, Human",Expression profiling by array,different cell type
+GSE150621,Gestational diabetes and human amniocytes,Illumina HiSeq 2500,Expression profiling by high throughput sequencing,different cell type
+GSE106224,Exosomal RNA may reflect placenta deficiencies and provide better biomarker in preterm birth.,Illumina NextSeq 500,Non-coding RNA profiling by high throughput sequencing,different cell type
+GSE68180,Unbiased evaluation of cell-free amniotic fluid transcriptome of term and preterm infants to detect fetal maturity,Illumina HiSeq 2000,Expression profiling by high throughput sequencing,different cell type
+GSE72428,"Changes in eutopic endometrial gene expression during the progression of experimental endometriosis in the baboon, Papio anubis",Affymetrix HG-U133_PLUS_2[CDF: HGU133Plus2_Hs_ENTREZG_14.1.0],Expression profiling by array,different organism
+GSE44558,"	Maternal microRNAs secreted by the endometrium act as transcriptomic regulators of the pre-implantation embryo",Agilent-021827 Human miRNA Microarray G4470C,Non-coding RNA profiling by array (miRNA),different cell type
+GSE90060,Endometrial methylome of healthy women during the transition from pre-receptive to receptive phase,Illumina HumanMethylation450 BeadChip (HumanMethylation450_15017482),Methylation profiling by array,different assay
+E-MTAB-10947 ,,"RNA-seq of coding RNA from single cells, cell type comparison design","	Expression profiling by high throughput sequencing",different phase
+E-MTAB-7304 ,,genotyping by high throughput sequencing ,"	Expression profiling by high throughput sequencing",different cell type
+GSE148274,Podocalyxin governs the barrier function of human endometrial epithelium and critically regulates receptivity for embryo implantation,Illumina NextSeq 500 (Homo sapiens),"	Expression profiling by high throughput sequencing",different cell type
+GSE140021,Human Primordial Germ Cells are Specified from Lineage Primed Progenitors,Illumina HiSeq 4000/Illumina NovaSeq 6000,Expression profiling by high throughput sequencing,different cell type
+GSE168405,Single-cell RNA Sequencing of Endometrial Assembloid Cultures,"	Illumina NextSeq 500 (Homo sapiens)","	Expression profiling by high throughput sequencing",different assay
+ GSE18140,COX-2 network as predictive molecular marker for clinical pregnancy in IVF,[HG-U133_Plus_2] Affymetrix Human Genome U133 Plus 2.0 Array,Expression profiling by array,stimulated cycle
+GSE56980,"	A luteal phase deficiency model in normal women: structural and functional responses to varying concentrations of progesterone",Illumina HumanWG-6 v3.0 expression beadchip,Expression profiling by array,stimulated cycle
+GSE92324,Gene expression study of human endometrial receptivity in IVF implantation failure patients undergoing ovarian stimulation II,Illumina HumanHT-12 V4.0 expression beadchip,Expression profiling by array (mRNA),stimulated cycle
+GSE71835,Gene expression study of human endometrial receptivity in IVF implantation failure patients undergoing ovarian stimulation,Illumina HumanHT-12 V4.0 expression beadchip,Expression profiling by array,stimulated cycle
+GSE21225,,Affymetrix Human Genome U133 Plus 2.0 Array,Expression profiling by array (mRNA),stimulated cycle
+GSE13027,"	Endometrial receptivity",[HG-U133_Plus_2] Affymetrix Human Genome U133 Plus 2.0 Array,Expression profiling by array,stimulated cycle

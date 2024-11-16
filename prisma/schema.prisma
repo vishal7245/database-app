@@ -1,0 +1,98 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           Int    @id @default(autoincrement())
+  name         String
+  email        String @unique
+  organization String
+  password     String
+}
+
+model HealthyRIF {
+  id                  Int     @id @default(autoincrement())
+  Accession           String
+  earlySecretoryPhase Int?    
+  midSecretoryPhase   Int?    
+  lateSecretoryPhase  Int?    
+  samples             String? 
+  platform            String? 
+  experimentType      String? 
+  fileFormat          String? 
+  codingNonCoding     String? 
+  naturalStimulated   String? 
+  condition           String? 
+  title               String? 
+  published           String? 
+}
+
+model Proliferative {
+  id                  Int     @id @default(autoincrement())
+  Accession           String
+  earlySecretoryPhase Int?    
+  midSecretoryPhase   Int?    
+  lateSecretoryPhase  Int?    
+  samples             String? 
+  platform            String? 
+  experimentType      String? 
+  fileFormat          String? 
+  codingNonCoding     String? 
+  naturalStimulated   String? 
+  condition           String? 
+  title               String? 
+  published           String? 
+}
+
+model Healthy {
+  id                  Int     @id @default(autoincrement())
+  Accession           String
+  earlySecretoryPhase Int?    
+  midSecretoryPhase   Int?    
+  lateSecretoryPhase  Int?    
+  samples             String? 
+  platform            String? 
+  experimentType      String? 
+  fileFormat          String? 
+  codingNonCoding     String? 
+  naturalStimulated   String? 
+  condition           String? 
+  title               String? 
+  published           String? 
+}
+
+model RIF {
+  id                  Int     @id @default(autoincrement())
+  Accession           String
+  earlySecretoryPhase Int?    
+  midSecretoryPhase   Int?    
+  lateSecretoryPhase  Int?    
+  samples             String? 
+  platform            String? 
+  experimentType      String? 
+  fileFormat          String? 
+  codingNonCoding     String? 
+  naturalStimulated   String? 
+  condition           String? 
+  title               String? 
+  published           String? 
+}
+
+model ExcludedDatasets {
+  id             Int     @id @default(autoincrement())
+  Accession      String
+  title          String? 
+  platform       String? 
+  experimentType String? 
+  condition      String? 
+}
+
+model AllDatasets {
+  id         Int    @id @default(autoincrement())
+  Accession  String
+}
