@@ -1,53 +1,30 @@
-import { getServerSession } from 'next-auth';
-import { authOptions } from '@/lib/auth';
-import { redirect } from 'next/navigation';
-import { prisma } from '@/lib/prisma';
-import Link from 'next/link';
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/lib/auth'
+import { redirect } from 'next/navigation'
+import { prisma } from '@/lib/prisma'
+import { HealthyRIFTable } from '@/app/components/HealthyRIFTable'
 
-interface HealthyRIFItem {
-  id: number;
-  Accession: string;
-  earlySecretoryPhase?: number | null;
-  midSecretoryPhase?: number | null;
-  lateSecretoryPhase?: number | null;
-  samples?: string | null;
-  platform?: string | null;
-  experimentType?: string | null;
-  fileFormat?: string | null;
-  codingNonCoding?: string | null;
-  naturalStimulated?: string | null;
-  condition?: string | null;
-  title?: string | null;
-  published?: string | null;
+type PageProps = {
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
-interface PageProps {
-  searchParams: { [key: string]: string | string[] | undefined };
-}
+const ITEMS_PER_PAGE = 10
 
-export default async function HealthyRIFPage({
-  searchParams,
-}: PageProps) {
-  const session = await getServerSession(authOptions);
+export default async function HealthyRIFPage({ searchParams }: PageProps) {
+  const session = await getServerSession(authOptions)
 
   if (!session) {
-    redirect('/login');
+    redirect('/login')
   }
 
-  // Handle searchParams as a regular object
-  const page = typeof searchParams?.page === 'string' 
-    ? Math.max(1, parseInt(searchParams.page) || 1)
-    : 1;
-  
-  const itemsPerPage = 10;
-  const skip = (page - 1) * itemsPerPage;
+  const page = Math.max(1, Number(searchParams?.page) || 1)
+  const skip = (page - 1) * ITEMS_PER_PAGE
 
   try {
-    // Fetch data and total count in parallel
     const [data, totalItems] = await Promise.all([
       prisma.healthyRIF.findMany({
-        skip: skip,
-        take: itemsPerPage,
+        skip,
+        take: ITEMS_PER_PAGE,
         select: {
           id: true,
           Accession: true,
@@ -66,100 +43,23 @@ export default async function HealthyRIFPage({
         },
       }),
       prisma.healthyRIF.count()
-    ]);
+    ])
 
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE)
 
     return (
-      <div>
-        <h1 className="text-2xl text-black font-bold mb-6">Healthy RIF Data</h1>
-        <table className="min-w-full bg-white shadow-md rounded">
-          <thead>
-            <tr>
-              <th className="py-2 px-4 text-gray-700 border-b">Accession</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Early Secretory Phase</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Mid Secretory Phase</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Late Secretory Phase</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Samples (Menstrual Cycle Phase)</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Platform</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Experiment Type</th>
-              <th className="py-2 px-4 text-gray-700 border-b">File Format</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Coding/Non-Coding</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Natural/Stimulated</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Condition</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Title</th>
-              <th className="py-2 px-4 text-gray-700 border-b">Published</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item: HealthyRIFItem) => (
-              <tr key={item.id} className="text-center border-b hover:bg-gray-50">
-                <td className="py-2 text-gray-500 px-4">{item.Accession}</td>
-                <td className="py-2 text-gray-500 px-4">{item.earlySecretoryPhase ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.midSecretoryPhase ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.lateSecretoryPhase ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.samples ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.platform ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.experimentType ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.fileFormat ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.codingNonCoding ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.naturalStimulated ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.condition ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.title ?? 'N/A'}</td>
-                <td className="py-2 text-gray-500 px-4">{item.published ?? 'N/A'}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <div className="flex justify-center mt-4">
-          <nav>
-            <ul className="flex list-none">
-              {page > 1 && (
-                <li>
-                  <Link
-                    href={`?page=${page - 1}`}
-                    className="px-3 py-2 mx-1 bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
-                  >
-                    Previous
-                  </Link>
-                </li>
-              )}
-              {Array.from({ length: totalPages }, (_, index) => (
-                <li key={index}>
-                  <Link
-                    href={`?page=${index + 1}`}
-                    className={`px-3 py-2 mx-1 rounded ${
-                      page === index + 1 
-                        ? 'bg-blue-500 text-white' 
-                        : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                    }`}
-                  >
-                    {index + 1}
-                  </Link>
-                </li>
-              ))}
-              {page < totalPages && (
-                <li>
-                  <Link
-                    href={`?page=${page + 1}`}
-                    className="px-3 py-2 mx-1 bg-gray-200 text-gray-700 rounded hover:bg-gray-300"
-                  >
-                    Next
-                  </Link>
-                </li>
-              )}
-            </ul>
-          </nav>
-        </div>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-2xl font-bold mb-6 text-pink-700">Healthy RIF Data</h1>
+        <HealthyRIFTable data={data} currentPage={page} totalPages={totalPages} />
       </div>
-    );
+    )
   } catch (error) {
-    console.error('Error fetching HealthyRIF data:', error);
+    console.error('Error fetching HealthyRIF data:', error)
     return (
       <div className="text-center py-8">
-        <h1 className="text-2xl text-black font-bold mb-4">Error</h1>
-        <p className="text-gray-600">Failed to load Healthy RIF data. Please try again later.</p>
+        <h1 className="text-2xl font-bold mb-4 text-pink-700">Error</h1>
+        <p className="text-pink-600">Failed to load Healthy RIF data. Please try again later.</p>
       </div>
-    );
+    )
   }
 }
